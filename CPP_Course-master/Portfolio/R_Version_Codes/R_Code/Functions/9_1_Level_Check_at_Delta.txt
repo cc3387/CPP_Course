@@ -1,0 +1,35 @@
+Check_Delta<- function(selectpoint,total,stocksmean,A,B,C,D,weights,weights1,delta){
+
+
+if(selectpoint==1){
+  
+   for(i in 2:total){
+        weights1[i]=weights1[i]+delta/(total-1);
+   }
+
+   weights1[1]=weights1[1]-delta;
+}
+
+
+if(selectpoint>1){
+
+    for(i in selectpoint:total){
+        if(i != selectpoint){
+	weights1[i]=weights1[i]+delta/(total-1);
+        }
+    }
+
+    for(i in 1:(selectpoint-1)){
+    weights1[selectpoint-i]=weights1[selectpoint-i]+delta/(total-1);
+    }
+
+weights1[selectpoint]=weights1[selectpoint]-delta;
+}
+
+
+stdport=sqrt((B*(t(weights)%*%t(stocksmean))^2-2*C*(t(weights)%*%t(stocksmean))+A)/D);
+stdport1=sqrt((B*(t(weights1)%*%t(stocksmean))^2-2*C*(t(weights1)%*%t(stocksmean))+A)/D);
+
+return(list("stdport"=stdport, "stdport1"=stdport1, "w"=weights,"w1"=weights1));
+
+}

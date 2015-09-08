@@ -1,0 +1,11 @@
+Portmean <- function(Portfolio){
+
+n=dim(Portfolio)[2];
+meanmat=matrix(,1,n);
+
+       for(i in 1:n){
+       meanmat[,i]=mean(Portfolio[,i]);
+       }
+
+return(meanmat);
+}

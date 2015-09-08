@@ -1,0 +1,13 @@
+Minimum variance portfolio weights
+AIG,0.168289
+BABA,0.180549
+FANG,0.438661
+FB,0
+GS,0
+IBM,0
+Macy,0
+Morgan_Stanley,0
+MSFT,0
+Sears,0.212501
+SP_500,0
+TWTR,0

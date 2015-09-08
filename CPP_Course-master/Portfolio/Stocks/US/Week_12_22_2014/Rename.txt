@@ -1,0 +1,1 @@
+mv SHLD.txt Sears.txt && mv GSPC.txt SP_500.txt && mv M.txt Macy.txt &&
