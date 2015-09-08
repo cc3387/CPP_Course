@@ -1,3 +1,0 @@
-PlotMeanVar <- function(mean,std){
-plot(mean,std);
-}

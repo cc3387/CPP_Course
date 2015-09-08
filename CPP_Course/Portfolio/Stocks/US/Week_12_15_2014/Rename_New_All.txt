@@ -1,1 +1,0 @@
-mv AIG.txt AIG_New.txt && mv BABA.txt BABA_New.txt && mv FANG.txt FANG_New.txt && mv FB.txt FB_New.txt && mv GS.txt GS_New.txt && mv IBM.txt IBM_New.txt && mv Macy.txt Macy_New.txt && mv MS.txt MS_New.txt && mv MSFT.txt MSFT_New.txt && mv Sears.txt Sears_New.txt && mv SP_500.txt SP_500_New.txt && mv TWTR.txt TWTR_New.txt
