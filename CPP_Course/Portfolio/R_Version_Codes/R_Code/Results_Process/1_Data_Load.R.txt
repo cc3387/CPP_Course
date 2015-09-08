@@ -1,0 +1,17 @@
+APPLE="H:/Clement_Work_File/Machine_Learning/Stocks_Data/APPLE.txt"
+Microsoft="H:/Clement_Work_File/Machine_Learning/Stocks_Data/Microsoft.txt"
+Cisco="H:/Clement_Work_File/Machine_Learning/Stocks_Data/Cisco.txt"
+AIG="H:/Clement_Work_File/Machine_Learning/Stocks_Data/AIG.txt"
+
+MSFT = read.table(Microsoft);
+Cisco = read.table(Cisco);
+APPLE = read.table(APPLE);
+AIG = read.table(AIG);
+
+
+MSFTReturn=CalculateReturn(MSFT,"Adj Close");
+CiscoReturn = CalculateReturn(Cisco,"Adj Close");
+APPLEReturn = CalculateReturn(APPLE, "Adj Close");
+AIGReturn = CalculateReturn(AIG, "Adj Close");
+
+PortReturn=cbind(MSFTReturn,CiscoReturn,APPLEReturn,AIGReturn);

@@ -1,0 +1,1 @@
+mv SHLD_New.txt Sears_New.txt && mv GSPC_New.txt SP_500_New.txt

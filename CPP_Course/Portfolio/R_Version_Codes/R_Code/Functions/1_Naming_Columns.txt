@@ -1,0 +1,13 @@
+Columns <- function(ImpTable){
+
+Dates=ImpTable[1];
+Open=ImpTable[2];
+High=ImpTable[3];
+Low=ImpTable[4];
+Close=ImpTable[5];
+Volume=ImpTable[6];
+AdjClose=ImpTable[7];
+
+return(list("Dates"=Dates,"Open"=Open,"High"=High,"Low"=Low,"Close"=Close,"Volume"=Volume,"AdjClose"=AdjClose));
+
+}
