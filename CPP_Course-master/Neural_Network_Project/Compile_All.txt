@@ -1,0 +1,1 @@
+g++ -c Header.cpp -o Header.o && g++ -c main.cpp -o main.o && g++ Header.o main.o -o main_final
